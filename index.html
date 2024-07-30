@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de VCards</h1>
+        <div class="content">
+            <div class="form-container">
+                <form id="vcardForm">
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" placeholder="Juan Pérez" required>
+                    </div>
+                    <div>
+                        <label for="organization">Organización:</label>
+                        <input type="text" id="organization" placeholder="Mi Empresa" required>
+                    </div>
+                    <div>
+                        <label for="title">Cargo:</label>
+                        <input type="text" id="title" placeholder="Desarrollador Web" required>
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono:</label>
+                        <input type="text" id="phone" placeholder="+123456789" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" placeholder="juan.perez@example.com" required>
+                    </div>
+                    <div>
+                        <label for="addressStreet">Calle:</label>
+                        <input type="text" id="addressStreet" placeholder="Calle Falsa 123" required>
+                    </div>
+                    <div>
+                        <label for="addressLocality">Ciudad:</label>
+                        <input type="text" id="addressLocality" placeholder="Ciudad" required>
+                    </div>
+                    <div>
+                        <label for="addressRegion">Provincia/Región:</label>
+                        <input type="text" id="addressRegion" placeholder="Provincia" required>
+                    </div>
+                    <div>
+                        <label for="addressPostalCode">Código Postal:</label>
+                        <input type="text" id="addressPostalCode" placeholder="Código Postal" required>
+                    </div>
+                    <div>
+                        <label for="addressCountry">País:</label>
+                        <input type="text" id="addressCountry" placeholder="País" required>
+                    </div>
+                </form>
+                <button id="downloadQrButton" class="btn hidden">Descargar QR</button>
+                <p id="errorMessage" class="error-message"></p>
+            </div>
+
+            <div class="qr-container">
+                <div id="qrcodeFrame" class="hidden">
+                    <img id="qrImage" src="" alt="Código QR">
+                    <div class="qr-message">¡Escanéame!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

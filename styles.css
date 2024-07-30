@@ -1,0 +1,178 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Estilos del título */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos del contenedor de contenido */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilos del formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las etiquetas */
+label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilos de los campos de entrada */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilos del botón */
+button[type="button"] {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del contenedor del QR */
+.qr-container {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos del marco del QR */
+#qrcodeFrame {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    border: 4px solid #007bff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#qrcodeFrame img {
+    max-width: 100%;
+    height: auto;
+}
+
+.qr-message {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Estilos para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilos del mensaje de error */
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos generales para el botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Color azul moderno */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+    transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+.btn:focus {
+    outline: none; /* Quitar el contorno en foco */
+}
+
+.btn.hidden {
+    display: none;
+}
+
+/* Puedes ajustar el estilo si deseas agregar más personalización */
